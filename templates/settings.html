@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
 
     {% if context.player_name %}
-        <title>Screenly OSE - {{ context.player_name }}</title>
+      <title>{{context.player_name}}</title>
     {% else %}
         <title>Screenly OSE</title>
     {% endif %}
@@ -246,21 +246,15 @@
         </div>
     </div>
 
-    <div class="row">
-        <div id="wifi-section" class="col-12">
-            <h1 class="page-header">
-                Reset wifi config
-            </h1>
-            <p>Run it, and if the next boot does not have a network connection, you will be prompted to select a WiFi
-                network. <br><b>Warning:</b> after pressing, a reboot is required. Web interface will not be available
-                until reboot.</p>
-            <div class="form-actions">
-                <button id="btn-reset" class="btn btn-primary" type="button" {{ context.reset_button_state }}>Re-run
-                    network detection
-                </button>
+        <!--<div id="wifi-section" class="span12">
+          <h1 class="page-header">
+            Reset wifi config
+          </h1>
+          <p>Run it, and if the next boot does not have a network connection, you will be prompted to select a WiFi network. <br><b>Warning:</b> after pressing, a reboot is required. Web interface will not be available until reboot.</p>
+          <div class="form-actions">
+            <button id="btn-reset" class="btn btn-primary" type="button">Re-run network detection</button>
             </div>
-        </div>
-    </div>
+        </div>-->
 
     <div class="row">
         <div id="backup-section" class="col-12">
@@ -277,10 +271,9 @@
             </div>
         </div>
     </div>
-</div>
 
-<div id="footer">
-    <div class="container">
+    <div id="footer">
+      <div class="container">
         <div class="copy">
             &copy; Screenly, Inc.
         </div>
